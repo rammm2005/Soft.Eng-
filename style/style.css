@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,300&display=swap');
+
+
+
+
+:root {
+   
+    --bg-new-blue: hsl(240, 70%, 20%);
+    --bg-core-blue: rgba(15, 15, 87, 0.864), 0.807;
+    --bg-blue-input: rgb(106, 170, 197);
+    --box-shadow: white 2px 1px .5px;
+    --bg-error: rgb(194, 92, 92);
+
+    
+
+    --text-white: #ffff;
+    --text-error: rgb(219, 49, 49);
+
+
+    
+}
+
+
+* {
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--scroller-tumb);
+    border-radius: 5rem;
+}
+
+body {
+    background-color: var(--bg-new-blue);
+    overflow-x: hidden;
+}
+
+
+.container{
+    width: 100%;
+    position:relative;
+    display:flex;
+    height:100vh;
+}
+
+.container .image{
+    position:relative;
+    flex:1;
+}
+
+.container .image img{
+    height:auto;
+    width: 100%;
+    background-repeat:no-repeat;
+}
+
+.container .subscribe-box{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+.container .subscribe-box .content{
+    position: absolute;
+    background-color:var(--bg-new-blue);
+    padding: 3rem 2rem 3rem 2rem;
+    border-radius: .3rem;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    margin-top: 4rem;
+    margin-left: -3rem;
+    width: 100%;
+    height: 90vh;
+    border: 3px solid white;
+    box-shadow: var(--box-shadow);
+}
+
+.container .subscribe-box .content h1{
+    font-family: "Metal Mania";
+    font-size: 6rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-white);
+    font-weight: 400;
+    margin-bottom: 6rem;
+}
+
+.container .subscribe-box .content .text-overview{
+    color: var(--text-white);
+    font-family: "Iceberg";
+    font-size: 2.5rem;
+    align-items: center;
+    text-align: center;
+    line-height: 1.3;
+    margin-bottom: 2.5rem;
+}
+
+.container .subscribe-box .content .task{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    align-items: center;
+}
+
+.container .subscribe-box .content .task i{
+    font-size: 3rem;
+    color: var(--text-white);
+    border: none;
+    outline: none;
+}
+
+.container .subscribe-box .content .task p{
+    font-size: 1.5rem;
+    color: var(--text-white);
+    font-family: "Roboto Mono";
+}
+
+
+.container .subscribe-box .content form{
+    position: relative;
+    margin-top: 3rem;
+}
+
+.container .subscribe-box .content .input-field{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: .7rem;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.container .subscribe-box .content .input-field label{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--text-white);
+    font-family: "Roboto Mono";
+}
+
+
+.container .subscribe-box .content .input-field .error-message{
+    right: 0;
+    color:var(--text-error);
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: "Roboto Mono";
+}
+
+.container .subscribe-box .content .input-field .form-input{
+    font-family: "Roboto Mono";
+    outline: none;
+    border: none;
+    padding: 1.6rem;
+    border-radius: .7rem;
+    background-color: var(--bg-blue-input);
+    color: var(--text-white);
+    font-size: 1.3rem;
+}
+
+.container .subscribe-box .content .input-field .error-input{
+    background-color: var(--bg-error);
+}
+
+.container .subscribe-box .content .input-field .form-input:focus{
+    border: none;
+    outline: none;
+}
+
+
+.container .subscribe-box .content .input-field .form-input::placeholder{
+    font-family: "Roboto Mono";
+    color: var(--text-white);
+    font-size: 1.3rem;
+}
+
+.container .subscribe-box .content .btn-submit{
+    position: relative;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Roboto Mono";
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    background-color: blue;
+    padding: 1.5rem;
+    font-weight: 500;
+    border-radius: .7rem;
+    color: var(--text-white);
+    width: 100%;
+
+}
+
+.container .subscribe-box .content .btn-submit:hover{
+    background-color: rgb(14, 14, 137);
+    transition: all ease-in-out 1s;
+}
+
+
+.container .content #thankYouMessage{
+    text-transform: capitalize;
+    color: var(--text-white);
+    font-size: 4rem;
+    margin-top: 5rem;
+    font-family: "Iceberg";
+    text-align: center;
+    align-items: center;
+}

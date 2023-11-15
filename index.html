@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="apple-touch-icon" href="jagoan/logo.jpeg" sizes="180x180">
+    <link rel="icon" type="image/png" href="jagoan/logo.jpeg" sizes="32x32">
+    <link rel="icon" type="image/png" href="jagoan/logo.jpeg" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Remidial Soft.Eng Techart</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="jagoan/half-background.jpeg" alt="Foto Preview" />
+        </div>
+        <div class="subscribe-box">
+            <div class="content">
+                <h1>Techart Insider</h1>
+                <p class="text-overview">We are organization base on Udayana university, we share our perspective about
+                    the world to student in engginering faculty. </p>
+                <div class="task-wrapper">
+                    <div class="task">
+                        <i class='bx bxs-check-circle'></i>
+                        <p>Mainly talk Programing, ui/ux, networking, bussiness intellegent.</p>
+                    </div>
+                    <div class="task">
+                        <i class='bx bxs-check-circle'></i>
+                        <p>Analyzing with AI, with comprehensive algorithm.</p>
+                    </div>
+                    <div class="task">
+                        <i class='bx bxs-check-circle'></i>
+                        <p>And any more !!!</p>
+                    </div>
+                </div>
+                <form id="validations" action="" method="#" onsubmit="return validateForm()">
+                    <div class="input-field">
+                        <label for="email">Email Address :
+
+                            <p id="emailError" class="error-message"></p>
+                        </label>
+                        <input type="email" name="email" class="form-input" id="email"
+                            placeholder="Enter the active Email" />
+                    </div>
+
+                    <button type="submit" class="btn-submit">Subscribe to Monthly NewsLetter</button>
+                </form>
+
+                <h2 id="thankYouMessage" style="display: none;">Thank you for subscribing !</h2>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
